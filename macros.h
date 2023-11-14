@@ -17,7 +17,7 @@
 "	Change the shell working directory.\n\n"\
 "	If no argument is given to cd the command will be interpreted\n"\
 "	as cd $HOME.\n"\
-"	if the argumenthelp is - (cd -), the command will be interpreted\n"\
+"	if the argument help is - (cd -), the command will be interpreted\n"\
 "	as cd $OLDPWD.\n\n"
 
 #define HELP_EXIT_MSG "exit=\n"\
