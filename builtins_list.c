@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * builtins_list - search for match and execute the associate builtin
- * @data: struct for the program's data
- * Return: Returns the return of the function executed is there is a match,
+ * builtins_list - Searches for a match and executes the associated builtin command.
+ * @data: Struct containing the program's data.
+ * Return: Returns the return value of the executed function if there is a match,
  * otherwise returns -1.
  **/
 int builtins_list(data_of_program *data)
