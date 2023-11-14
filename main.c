@@ -1,10 +1,10 @@
 #include "shell.h"
 /**
- * main - initialize the variables of the program
- * @argc: number of values received from the command line
- * @argv: values received from the command line
- * @env: number of values received from the command line
- * Return: zero on succes.
+ * main - Initializes the variables of the program
+ * @argc: Number of values received from the command line
+ * @argv: Values received from the command line
+ * @env: Values received from the command line
+ * Return: Zero on success.
  */
 int main(int argc, char *argv[], char *env[])
 {
@@ -26,10 +26,11 @@ int main(int argc, char *argv[], char *env[])
 }
 
 /**
- * handle_ctrl_c - print the prompt in a new line
- * when the signal SIGINT (ctrl + c) is send to the program
- * @UNUSED: option of the prototype
+ * handle_ctrl_c - Prints the prompt in a new line
+ * when the signal SIGINT (Ctrl + C) is sent to the program
+ * @UNUSED: Option of the prototype
  */
+
 void handle_ctrl_c(int opr UNUSED)
 {
 	_print("\n");
@@ -37,11 +38,11 @@ void handle_ctrl_c(int opr UNUSED)
 }
 
 /**
- * inicialize_data - inicialize the struct with the info of the program
- * @data: pointer to the structure of data
- * @argv: array of arguments pased to the program execution
- * @env: environ pased to the program execution
- * @argc: number of values received from the command line
+ * initialize_data - Initializes the struct with the info of the program
+ * @data: Pointer to the structure of data
+ * @argv: Array of arguments passed to the program execution
+ * @env: Environ passed to the program execution
+ * @argc: Number of values received from the command line
  */
 void inicialize_data(data_of_program *data, int argc, char *argv[], char **env)
 {
@@ -85,9 +86,9 @@ void inicialize_data(data_of_program *data, int argc, char *argv[], char **env)
 	}
 }
 /**
- * sisifo - its a infinite loop that shows the prompt
- * @prompt: prompt to be printed
- * @data: its a infinite loop that shows the prompt
+ * sisifo - Infinite loop that shows the prompt
+ * @prompt: Prompt to be printed
+ * @data: Data structure for the program
  */
 void sisifo(char *prompt, data_of_program *data)
 {
