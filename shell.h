@@ -24,7 +24,7 @@
  * @program_name: the name of the executable
  * @input_line: pointer to the input read for _getline
  * @command_name: pointer to the first command typed by the user
- * @exec_counter: number of excecuted comands
+ * @exec_counter: number of executed commands
  * @file_descriptor: file descriptor to the input of commands
  * @tokens: pointer to array of tokenized input
  * @env: copy of the environ
