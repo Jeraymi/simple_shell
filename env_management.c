@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * env_get_key - Gets the value of an environment variable.
- * @key: The environment variable of interest.
- * @data: Struct of the program's data.
- * Return: A pointer to the value of the variable or NULL if it doesn't exist.
+ * env_get_key - gets the value of an environment variable
+ * @key: the environment variable of interest
+ * @data: struct of the program's data
+ * Return: a pointer to the value of the variable or NULL if it doesn't exist
  */
 char *env_get_key(char *key, data_of_program *data)
 {
@@ -30,11 +30,12 @@ char *env_get_key(char *key, data_of_program *data)
 }
 
 /**
- * env_set_key - Overwrites the value of the environment variable or creates it if it doesn't exist.
- * @key: Name of the variable to set.
- * @value: New value.
- * @data: Struct of the program's data.
- * Return: 1 if the parameters are NULL, 2 if there is an error, or 0 if successful.
+ * env_set_key - overwrite the value of the environment variable
+ * or create it if does not exist.
+ * @key: name of the variable to set
+ * @value: new value
+ * @data: struct of the program's data
+ * Return: 1 if the parameters are NULL, 2 if there is an erroror 0 if sucess.
  */
 
 int env_set_key(char *key, char *value, data_of_program *data)
@@ -72,10 +73,10 @@ int env_set_key(char *key, char *value, data_of_program *data)
 }
 
 /**
- * env_remove_key - Remove a key from the environment.
- * @key: The key to remove.
- * @data: The structure of the program's data.
- * Return: 1 if the key was removed, 0 if the key does not exist.
+ * env_remove_key - remove a key from the environment
+ * @key: the key to remove
+ * @data: the sructure of the program's data
+ * Return: 1 if the key was removed, 0 if the key does not exist;
  */
 int env_remove_key(char *key, data_of_program *data)
 {
@@ -111,9 +112,9 @@ int env_remove_key(char *key, data_of_program *data)
 
 
 /**
- * print_environ - Prints the current environment.
- * @data: Struct for the program's data.
- * Return: Nothing.
+ * print_environ - prints the current environ
+ * @data: struct for the program's data
+ * Return: nothing
  */
 void print_environ(data_of_program *data)
 {
